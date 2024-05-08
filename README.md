@@ -8,6 +8,7 @@
     * Description of test hardware: Custom PCBA, oscilloscope, DC power supply, electronic load, thermal camera, light box, comptuer (Altium Designer), soldering iron, probes, extra cables
 
 ## 1. Video Presentation
+[![Video Demo Link]](https://drive.google.com/file/d/1Np-Zz9sIQ7Skqac6DGJbQfD3JJiPzrXR/view?usp=sharing)
 
 ## 2. Project Summary
 
