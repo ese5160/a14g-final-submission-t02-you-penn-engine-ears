@@ -41,7 +41,11 @@
 
 
 # Project Links
-!!!
+<p>Node-RED Instance:</p>
+
+<p>A12G Code Repository:</p>
+
+<p>Altium 365 PCBA:</p>
 
 ## 3. Hardware & Software Requirements
 
@@ -133,3 +137,26 @@ HRS 16: The system included an ON/OFF switch, as specified.
 
 
 ## 4. Project Photos & Screenshots
+
+Final Project:
+
+
+PCBA Top:
+
+
+PCBA Bottom:
+
+
+Thermal camera images while the board is running under load (you may use your Board Bringup Thermal image here!)
+
+
+Altium Board design 2D view:
+
+
+Altium Board design 3D view:
+
+
+Node-RED dashboard (screenshot)
+Node-RED backend (screenshot)
+
+Block diagram of your system:
