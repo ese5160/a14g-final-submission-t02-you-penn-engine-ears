@@ -157,8 +157,14 @@ HRS 16: The system included an ON/OFF switch, as specified.
 # Altium Board design 3D view:
 ![PCBA 3D top](/images/PCBA_3D.png)
 
-# Node-RED dashboard (screenshot)
-# Node-RED backend (screenshot)
+# Node-RED dashboard:
+![dash](/images/Frontend.png)
+
+# Node-RED backend:
+![OTAFU_Heatmap-RED](/images/Heatmap_OTAFU.png)
+![IMU-RED](/images/IMU_Acc.png)
+![AQ-RED](/images/AirQuality.png)
+
 
 # Block diagram of system:
 # Simple System Diagram:
