@@ -141,22 +141,26 @@ HRS 16: The system included an ON/OFF switch, as specified.
 Final Project:
 
 
-PCBA Top:
+# PCBA Top:
+![PCBA Top](/images/PCBA_top.jpg)
+
+# PCBA Bottom:
+![PCBA Bottom](/images/PCBA_bottom.jpg)
+
+# The load was 545mA on the 3.3V regulator for the following thermal image of the PCBA:
+![Thermal Load](/images/A11G_thermal.jpeg)
+
+# Altium Board design 2D view:
 
 
-PCBA Bottom:
+# Altium Board design 3D view:
 
 
-Thermal camera images while the board is running under load (you may use your Board Bringup Thermal image here!)
+# Node-RED dashboard (screenshot)
+# Node-RED backend (screenshot)
 
-
-Altium Board design 2D view:
-
-
-Altium Board design 3D view:
-
-
-Node-RED dashboard (screenshot)
-Node-RED backend (screenshot)
-
-Block diagram of your system:
+# Block diagram of your system:
+# Simple System Diagram:
+![Simple System Diagram](/images/SimpleSystemBlockDiagram.jpg)
+# Detailed System Diagram:
+![Detailed System Diagram](/images/DetailedSystemBlockDiagram.jpg)
