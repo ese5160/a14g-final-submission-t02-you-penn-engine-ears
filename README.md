@@ -5,7 +5,7 @@
     * Team Name: You Pen Engine Ears
     * Team Members: Jack Campanella and Shreya Maggo
     * Github Repository URL: 
-    * Description of test hardware: (development boards, sensors, actuators, laptop + OS, etc) 
+    * Description of test hardware: Custom PCBA, oscilloscope, DC power supply, electronic load, thermal camera, light box, comptuer (Altium Designer), soldering iron, probes, extra cables
 
 ## 1. Video Presentation
 
@@ -26,9 +26,9 @@
 battery, I2C sensor
 
 # Prototype Lessons Learned
-Communication protocol, break them out separately
-Code as much as possible implementing FreeRTOS
-
+<p>While the board benefits in its hardware design from using a shared SPI bus, this did make programming a little more challenging for trying to test peripherals. Future implementations and prototypes can be made better by separating the hardware for communication protocols as well to not share buses as this would help with programming and testing them during bring up and can always be revised in a second version or second prototype after confirming functionality.</p>
+<p>After learning and practicing implementing drivers with RTOS through the use of FreeRTOS, future code for drivers can benefit from starting with a FreeRTOS implementation to save time and make it easier to integrate into a system or prototype that leverages FreeRTOS.</p>
+<p>The use of multiple jumpers is not something that was previously encountered in PCB design despite it being on some previously used breakout boards. This is an extremely useful design approach along with testpoints to allow for verification and validation on prototypes as well as enabling possible modifications needed to be made due to small errors such as pulling up the I2C bus to 5V when it should be pulled up to 3.3V.</p>
 
 # Takeaways
 ???
