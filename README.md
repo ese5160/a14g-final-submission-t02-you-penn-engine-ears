@@ -23,7 +23,7 @@
 <p>The robot sensing module will feature an intuitive User Interface (UI) designed to enhance the capabilities of the system. This UI will serve as a crucial tool for first responders and operators, providing real-time data visualization and user-friendly interaction. The UI will include features such as a real-time mapping system highlighting unsafe zones, prominently displayed temperature readings, and detailed air quality sensor data, including particle count from debris, smoke, and other airborne particles. Users have the flexibility to access a comprehensive map, detailed sensor readings, and a dashboard for holistic situational awareness.</p>
 
 # Challenges
-battery, I2C sensor
+<p>For the PCB the board layout was a particular challenge due to space constraints regarding many of the traces that included the SPI bus. This was challening due to the IMU containing two sensors, the gyroscope and accelerometer, a separate breakout for the OLED screen, and an I2C breakout for the Air Quality sensor. This was overcome by trying a few higher level layouts that filled in the supporting components and general traces around the connectors and IMU. As this developed the entire grouping of traces and supporting components close to the connectors and IMU were moved around the SAMD21 microcontroller until the design made sense and could fit into a logical spot on the PCB.</p>
 
 # Prototype Lessons Learned
 <p>While the board benefits in its hardware design from using a shared SPI bus, this did make programming a little more challenging for trying to test peripherals. Future implementations and prototypes can be made better by separating the hardware for communication protocols as well to not share buses as this would help with programming and testing them during bring up and can always be revised in a second version or second prototype after confirming functionality.</p>
@@ -44,7 +44,6 @@ battery, I2C sensor
 !!!
 
 ## 3. Hardware & Software Requirements
-From earlier!
 
 # Hardware Requirement Specifications
 |Req ID|Description|
