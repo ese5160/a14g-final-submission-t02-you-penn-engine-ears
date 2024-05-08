@@ -4,7 +4,7 @@
     * Team Number: 2
     * Team Name: You Pen Engine Ears
     * Team Members: Jack Campanella and Shreya Maggo
-    * Github Repository URL: 
+    * Github Repository URL: https://github.com/ese5160/a14g-final-submission-t02-you-penn-engine-ears
     * Description of test hardware: Custom PCBA, oscilloscope, DC power supply, electronic load, thermal camera, light box, comptuer (Altium Designer), soldering iron, probes, extra cables
 
 ## 1. Video Presentation
