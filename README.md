@@ -85,26 +85,20 @@
 <p>HRS 12: The OLED screen was used for the user interface as specified in the PCBA.</p>
 <p>HRS 13: The screen communicated with the microcontroller via the I2C bus with a modified solder connection.</p>
 
-<p>Unsure about the ones below.</p>
-HRS 14: The screen displayed battery life, meeting the requirement.
-HRS 15: The screen displayed the number of suspended particles as required.
-HRS 16: The system included an ON/OFF switch, as specified.
 
 # Implemented and Tested with Changes:
-<p>HRS 04: The BMI088 was not fully implemented as the IMU and the *** was used instead.</p>
+<p>HRS 04: The BMI088 was not fully implemented as the IMU and the LSM6DS0 was used instead.</p>
 <p>HRS 07: The IMU did not communicate with the microcontroller via the SPI bus but instead an I2C bus was used.</p>
+<p>HRS 13: The screen communicated with the microcontroller via the I2C bus.</p>
 
 # Not Implemented or Not Working:
 <p>HRS 09: The air quality sensor did communicate with the microcontroller via the I2C bus but would only send 1 message with data.</p>
 <p>HRS 10: The air quality sensor did not categorize particulate matter into various size bins as specified: 0.3 micrometers, 0.5 micrometers, 1.0 micrometers, 2.5 micrometers, 5.0 micrometers, and 10 micrometers based on how it sense particles, but this data was not all accessed.</p>
 <p>HRS 11: The air quality sensor did measure the concentration of particulate matter with diameters of 1.0 micrometers, 2.5 micrometers, and 10.0 micrometers but was not confirmed beyond specification.</p>
-
-<p>Unsure about the ones below.</p>
-
-<p>HRS 12: An OLED screen was not used for the user interface.</p>
-<p>HRS 13: The screen did not communicate with the microcontroller via the I2C bus.</p>
+<p>HRS 12: An OLED screen was used for the user interface.</p>
 <p>HRS 14: The screen did not display the battery life.</p>
 <p>HRS 15: The screen did not display the number of suspended particles.</p>
+<p>HRS 16: The system shall have an ON/OFF switch</p>
 
 # Software Requirement Specifications
 |Req ID|Description|
