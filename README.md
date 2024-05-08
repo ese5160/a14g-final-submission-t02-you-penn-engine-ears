@@ -138,7 +138,7 @@ HRS 16: The system included an ON/OFF switch, as specified.
 
 ## 4. Project Photos & Screenshots
 
-Final Project:
+# Final Project:
 
 
 # PCBA Top:
@@ -151,15 +151,16 @@ Final Project:
 ![Thermal Load](/images/A11G_thermal.jpeg)
 
 # Altium Board design 2D view:
-
+![PCBA 2D top](/images/PCBA_2D_top.png)
+![PCBA 2D bottom](/images/PCBA_2D_bottom.png)
 
 # Altium Board design 3D view:
-
+![PCBA 3D top](/images/PCBA_3D.png)
 
 # Node-RED dashboard (screenshot)
 # Node-RED backend (screenshot)
 
-# Block diagram of your system:
+# Block diagram of system:
 # Simple System Diagram:
 ![Simple System Diagram](/images/SimpleSystemBlockDiagram.jpg)
 # Detailed System Diagram:
