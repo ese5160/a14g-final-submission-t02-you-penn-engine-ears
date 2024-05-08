@@ -8,7 +8,7 @@
     * Description of test hardware: Custom PCBA, oscilloscope, DC power supply, electronic load, thermal camera, light box, comptuer (Altium Designer), soldering iron, probes, extra cables
 
 ## 1. Video Presentation
-[![Video Demo Link]](https://drive.google.com/file/d/1Np-Zz9sIQ7Skqac6DGJbQfD3JJiPzrXR/view?usp=sharing)
+![Final Demonstration Video](https://drive.google.com/file/d/1Np-Zz9sIQ7Skqac6DGJbQfD3JJiPzrXR/view?usp=sharing)
 
 ## 2. Project Summary
 
@@ -25,6 +25,10 @@
 
 # Challenges
 <p>For the PCB the board layout was a particular challenge due to space constraints regarding many of the traces that included the SPI bus. This was challening due to the IMU containing two sensors, the gyroscope and accelerometer, a separate breakout for the OLED screen, and an I2C breakout for the Air Quality sensor. This was overcome by trying a few higher level layouts that filled in the supporting components and general traces around the connectors and IMU. As this developed the entire grouping of traces and supporting components close to the connectors and IMU were moved around the SAMD21 microcontroller until the design made sense and could fit into a logical spot on the PCB.</p>
+
+<p>The traces connecting the I2C SDA and SCL lines to +5V had to be cut in order to connect them to +3.3V. Fortunately, cutting one trace sufficed. </p>
+
+<p>Designing the heat map was a challenge as it required collecting data from the IMU and air quality sensor. Since the air quality sensor has not been integrated yet, I simulated the air quality sensor values. Forming a linear relation from the x and y readings to map the air quality sensors, using JavaScript to implement this functionality was a great learning experience.   </p>
 
 # Prototype Lessons Learned
 <p>While the board benefits in its hardware design from using a shared SPI bus, this did make programming a little more challenging for trying to test peripherals. Future implementations and prototypes can be made better by separating the hardware for communication protocols as well to not share buses as this would help with programming and testing them during bring up and can always be revised in a second version or second prototype after confirming functionality.</p>
