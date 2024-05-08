@@ -16,7 +16,7 @@
 <p>The robot sensing module uses the SAMW25 as its main microcontroller and connect the robot to the Internet of Things. This is intended to be an onboard feature for the sensing module as it can retrofit a larger number of robots as well as be used in other sensing applications such as being mounted to an emergency vehicle like an ambulance or fire truck. The module can be used to sense the air quality at its location and upload the data to the cloud in real time to inform first responders of safety conditions. This module can be deployed autonomously or manually as it operates independently of its method of transport and exists as a node in the Internet of Things network.</p>
 
 # Inspiration
-<p>Local emergencies such as fires and construction site accidents with dust and debris are dangerous even for first responders. This device is useful to protect first responders when arriving on the scene of an emergency such as a building fire or building collapse to account for environmental conditions to prepare the responders for entering a dangerous area. The module can also be used to move away from a disaster or emergency by measuring the air quality to determine the area of evacuation in real time which can be useful for responding to disasters such as wildfires that occur near residential areas. As this information is available real time in the cloud, it will be obtained faster than if humans moved through the environment if attached to a robot such as a quadrotor and allow for data to be aggregated from multiple modules in the cloud to quickly develop a safe response plan. 
+<p>Local emergencies such as fires and construction site accidents with dust and debris are dangerous even for first responders. This device is useful to protect first responders when arriving on the scene of an emergency such as a building fire or building collapse to account for environmental conditions to prepare the responders for entering a dangerous area. The module can also be used to move away from a disaster or emergency by measuring the air quality to determine the area of evacuation in real time which can be useful for responding to disasters such as wildfires that occur near residential areas. As this information is available in real time in the cloud, it will be obtained faster than if humans moved through the environment if attached to a robot such as a quadrotor and allow for data to be aggregated from multiple modules in the cloud to quickly develop a safe response plan. 
 
 
 # Device Functionality
@@ -44,9 +44,9 @@
 # Project Links
 <p>Node-RED Instance:</p>
 
-<p>A12G Code Repository:</p>
+<p>A12G Code Repository: https://github.com/ese5160/a12g-firmware-drivers-t02-you-penn-engine-ears</p>
 
-<p>Altium 365 PCBA:</p>
+<p>Altium 365 PCBA: https://upenn-eselabs.365.altium.com/designs/4E715F27-C01E-4577-BB2F-23F5CDC1C921</p>
 
 ## 3. Hardware & Software Requirements
 
