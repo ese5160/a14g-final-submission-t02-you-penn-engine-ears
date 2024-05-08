@@ -36,7 +36,7 @@
 
 <p>Assignments were particularly instrumental in reinforcing these concepts. They offered hands-on experience with FreeRTOS, giving a deeper insight into tasks, queues, and other synchronization techniques. This practical application aided in understanding how to optimize the implementation and manage task priorities, which are vital for maintaining system stability and efficiency.</p>
 
-<p>The lectures and assignments emphasized the use of development tools like the Command Line Interface (CLI), which proved essential for streamlining the development process. Learning to use CLI efficiently allowed for faster iteration and debugging, which helped for testing the Hardware and Software requirements and in general board bring up.</p>
+<p>The lectures and assignments emphasized the use of development tools like the Command Line Interface (CLI), which proved essential for streamlining the development process. Learning to use the CLI efficiently allowed for faster iteration and debugging, which helped for testing the Hardware and Software requirements and in the general board bring up.</p>
 
 <p>It was also helpful to go through how to design components from scratch in Altium based on datasheet specifications. This through line of leveraging datasheets throughout the course was also a great reminder in the design process.</p>
 
