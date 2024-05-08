@@ -118,7 +118,7 @@ HRS 16: The system included an ON/OFF switch, as specified.
 |SRS 11|The output data rate of the gyroscope and accelerometer in the IMU shall be 400Hz to synchronize the data|
 
 # Implemented and Tested:
-<p>SRS 02: The data from the air quality sensor was deemed accurate after a 30-second startup period for its fan as required. This was a specification that was accepted as true based on the datasheet and testing the measurements with the CLI.</p>
+<p>SRS 02: The data from the air quality sensor was deemed accurate after a 30 second startup period for its fan as required. This was a specification that was accepted as true based on the datasheet and testing the measurements with the CLI.</p>
 <p>SRS 03: The UI successfully implemented a color-coded map showing unsafe areas, utilizing a color gradient for intensity. This was shown in the heatmap with Node Red.</p>
 <p>SRS 04: The SAMD21 used a Real-Time Operating System (RTOS) to switch between different tasks for sensing and transmitting data as specified. This was tested by switching between tasks to upload data to the cloud and measuring with the IMU in the full demo.</p>
 
