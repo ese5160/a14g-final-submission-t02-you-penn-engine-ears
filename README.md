@@ -3,9 +3,9 @@
 
     * Team Number: 2
     * Team Name: You Pen Engine Ears
-    * Team Members: 
+    * Team Members: Jack Campanella and Shreya Maggo
     * Github Repository URL: 
-    * Description of test hardware: (development boards, sensors, actuators, laptop + OS, etc) 
+    * Description of test hardware: Custom PCBA, oscilloscope, DC power supply, electronic load, thermal camera, light box, comptuer (Altium Designer), soldering iron, probes, extra cables
 
 ## 1. Video Presentation
 [![Video Demo Link]](https://drive.google.com/file/d/1Np-Zz9sIQ7Skqac6DGJbQfD3JJiPzrXR/view?usp=sharing)
@@ -24,21 +24,31 @@
 <p>The robot sensing module will feature an intuitive User Interface (UI) designed to enhance the capabilities of the system. This UI will serve as a crucial tool for first responders and operators, providing real-time data visualization and user-friendly interaction. The UI will include features such as a real-time mapping system highlighting unsafe zones, prominently displayed temperature readings, and detailed air quality sensor data, including particle count from debris, smoke, and other airborne particles. Users have the flexibility to access a comprehensive map, detailed sensor readings, and a dashboard for holistic situational awareness.</p>
 
 # Challenges
-battery, I2C sensor
+<p>For the PCB the board layout was a particular challenge due to space constraints regarding many of the traces that included the SPI bus. This was challening due to the IMU containing two sensors, the gyroscope and accelerometer, a separate breakout for the OLED screen, and an I2C breakout for the Air Quality sensor. This was overcome by trying a few higher level layouts that filled in the supporting components and general traces around the connectors and IMU. As this developed the entire grouping of traces and supporting components close to the connectors and IMU were moved around the SAMD21 microcontroller until the design made sense and could fit into a logical spot on the PCB.</p>
 
 # Prototype Lessons Learned
-Communication protocol, break them out separately
-Code as much as possible implementing FreeRTOS
-
+<p>While the board benefits in its hardware design from using a shared SPI bus, this did make programming a little more challenging for trying to test peripherals. Future implementations and prototypes can be made better by separating the hardware for communication protocols as well to not share buses as this would help with programming and testing them during bring up and can always be revised in a second version or second prototype after confirming functionality.</p>
+<p>After learning and practicing implementing drivers with RTOS through the use of FreeRTOS, future code for drivers can benefit from starting with a FreeRTOS implementation to save time and make it easier to integrate into a system or prototype that leverages FreeRTOS.</p>
+<p>The use of multiple jumpers is not something that was previously encountered in PCB design despite it being on some previously used breakout boards. This is an extremely useful design approach along with testpoints to allow for verification and validation on prototypes as well as enabling possible modifications needed to be made due to small errors such as pulling up the I2C bus to 5V when it should be pulled up to 3.3V.</p>
 
 # Takeaways
-???
+<p>One of the critical takeaways from lectures was how FreeRTOS facilitates multitasking, allowing the development of complex embedded applications that can perform multiple functions concurrently without failing to meet real-time requirements.</p>
+
+<p>Assignments were particularly instrumental in reinforcing these concepts. They offered hands-on experience with FreeRTOS, giving a deeper insight into tasks, queues, and other synchronization techniques. This practical application aided in understanding how to optimize the implementation and manage task priorities, which are vital for maintaining system stability and efficiency.</p>
+
+<p>The lectures and assignments emphasized the use of development tools like the Command Line Interface (CLI), which proved essential for streamlining the development process. Learning to use CLI efficiently allowed for faster iteration and debugging, which helped for testing the Hardware and Software requirements and in general board bring up.</p>
+
+<p>It was also helpful to go through how to design components from scratch in Altium based on datasheet specifications. This through line of leveraging datasheets throughout the course was also a great reminder in the design process.</p>
+
 
 # Project Links
-!!!
+<p>Node-RED Instance:</p>
+
+<p>A12G Code Repository:</p>
+
+<p>Altium 365 PCBA:</p>
 
 ## 3. Hardware & Software Requirements
-From earlier!
 
 # Hardware Requirement Specifications
 |Req ID|Description|
@@ -62,7 +72,19 @@ From earlier!
 
 
 <p>Implemented and Tested:</p>
+<p>HRS 01: The project was successfully based on the SAMW25 module as specified in the PCBA.</p>
+<p>HRS 02: The SAMD21 was implemented as the main microcontroller as specified in the PCBA.</p>
+<p>HRS 03: The WINC1500 was used as the WiFi chip as specified in the PCBA.</p>
+<p>HRS 05: The accelerometer detected acceleration of the robot with a resolution of 0.09mg as tested with the CLI.</p>
+<p>HRS 06: The gyroscope detected motion along three orthogonal axes with a resolution of 0.004°/s as tested with the CLI.</p>
+<p>HRS 08: The PMSA0031 was used as the air quality sensor as specified in the PCBA.</p>
+<p>HRS 12: The OLED screen was used for the user interface as specified in the PCBA.</p>
+<p>HRS 13: The screen communicated with the microcontroller via the I2C bus with a modified solder connection.</p>
 
+<p>Unsure about the ones below.</p>
+HRS 14: The screen displayed battery life, meeting the requirement.
+HRS 15: The screen displayed the number of suspended particles as required.
+HRS 16: The system included an ON/OFF switch, as specified.
 
 <p>Implemented and Tested with Changes:</p>
 <p>HRS 04: The BMI088 was not fully implemented as the IMU and the *** was used instead.</p>
@@ -95,13 +117,6 @@ From earlier!
 |SRS 10|The OLED screen shall display WiFi connection and strength using “WiFi bars”|
 |SRS 11|The output data rate of the gyroscope and accelerometer in the IMU shall be 400Hz to synchronize the data|
 
-Not
-1
-~5
-6, switched to I2C
-9
-10
-
 <p>Implemented and Tested:</p>
 <p>SRS 02: The data from the air quality sensor was deemed accurate after a 30-second startup period for its fan as required. This was a specification that was accepted as true based on the datasheet and testing the measurements with the CLI.</p>
 <p>SRS 03: The UI successfully implemented a color-coded map showing unsafe areas, utilizing a color gradient for intensity. This was shown in the heatmap with Node Red.</p>
@@ -123,3 +138,31 @@ Not
 
 
 ## 4. Project Photos & Screenshots
+
+# Final Project:
+
+
+# PCBA Top:
+![PCBA Top](/images/PCBA_top.jpg)
+
+# PCBA Bottom:
+![PCBA Bottom](/images/PCBA_bottom.jpg)
+
+# The load was 545mA on the 3.3V regulator for the following thermal image of the PCBA:
+![Thermal Load](/images/A11G_thermal.jpeg)
+
+# Altium Board design 2D view:
+![PCBA 2D top](/images/PCBA_2D_top.png)
+![PCBA 2D bottom](/images/PCBA_2D_bottom.png)
+
+# Altium Board design 3D view:
+![PCBA 3D top](/images/PCBA_3D.png)
+
+# Node-RED dashboard (screenshot)
+# Node-RED backend (screenshot)
+
+# Block diagram of system:
+# Simple System Diagram:
+![Simple System Diagram](/images/SimpleSystemBlockDiagram.jpg)
+# Detailed System Diagram:
+![Detailed System Diagram](/images/DetailedSystemBlockDiagram.jpg)
