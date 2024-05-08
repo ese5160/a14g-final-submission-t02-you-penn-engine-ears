@@ -3,7 +3,7 @@
 
     * Team Number: 2
     * Team Name: You Pen Engine Ears
-    * Team Members: 
+    * Team Members: Jack Campanella and Shreya Maggo
     * Github Repository URL: 
     * Description of test hardware: (development boards, sensors, actuators, laptop + OS, etc) 
 
@@ -61,7 +61,19 @@ From earlier!
 
 
 <p>Implemented and Tested:</p>
+<p>HRS 01: The project was successfully based on the SAMW25 module as specified in the PCBA.</p>
+<p>HRS 02: The SAMD21 was implemented as the main microcontroller as specified in the PCBA.</p>
+<p>HRS 03: The WINC1500 was used as the WiFi chip as specified in the PCBA.</p>
+<p>HRS 05: The accelerometer detected acceleration of the robot with a resolution of 0.09mg as tested with the CLI.</p>
+<p>HRS 06: The gyroscope detected motion along three orthogonal axes with a resolution of 0.004°/s as tested with the CLI.</p>
+<p>HRS 08: The PMSA0031 was used as the air quality sensor as specified in the PCBA.</p>
+<p>HRS 12: The OLED screen was used for the user interface as specified in the PCBA.</p>
+<p>HRS 13: The screen communicated with the microcontroller via the I2C bus with a modified solder connection.</p>
 
+<p>Unsure about the ones below.</p>
+HRS 14: The screen displayed battery life, meeting the requirement.
+HRS 15: The screen displayed the number of suspended particles as required.
+HRS 16: The system included an ON/OFF switch, as specified.
 
 <p>Implemented and Tested with Changes:</p>
 <p>HRS 04: The BMI088 was not fully implemented as the IMU and the *** was used instead.</p>
@@ -93,13 +105,6 @@ From earlier!
 |SRS 09|The OLED screen shall display relative battery percentage using a conservative estimate that underestimates the amount of power left by at least 20%|
 |SRS 10|The OLED screen shall display WiFi connection and strength using “WiFi bars”|
 |SRS 11|The output data rate of the gyroscope and accelerometer in the IMU shall be 400Hz to synchronize the data|
-
-Not
-1
-~5
-6, switched to I2C
-9
-10
 
 <p>Implemented and Tested:</p>
 <p>SRS 02: The data from the air quality sensor was deemed accurate after a 30-second startup period for its fan as required. This was a specification that was accepted as true based on the datasheet and testing the measurements with the CLI.</p>
